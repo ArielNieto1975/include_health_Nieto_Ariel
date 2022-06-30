@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Include Health Program</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" />
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+    <header >
+        <section class="cabecera" >
+            <a class="cabecera__logo" href="../index.html">
+                <img src="../assets/inhe.png" alt="logo" width="150"/>
+            </a>
+            <nav>
+                <ul class="cabecera__lista">
+                    <li class="cabecera__lista__elemento"><a href="../index.html">Home</a></li>
+                    <li class="cabecera__lista__elemento"><a href="./prestaciones.html">Prestaciones</a></li>
+                    <li class="cabecera__lista__elemento"><a href="./institucional.html">Institucional</a>
+                        <ul>
+                            <li class="cabecera__lista__elemento en-linea">
+                                <a href="../pages/autoridades.html">Autoridades</a>
+                            </li>
+                            <li class="cabecera__lista__elemento en-linea">
+                                <a href="../pages/quienes_somos.html">Quienes somos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cabecera__lista__elemento"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <h1 class="cabecera__titulo">INSTITUCIONAL</h1>
+        </section>
+    </header>
+    <main class="parallax">
+        <!-- acceso a paginas de autoridades y quienes somos solo con descripcion - referencia relativa -->
+        <section class="insti">
+            <h1 class="insti_titulo">Nuestro compromiso es elevar la calidad de nuestras prestaciones, pensando en el bienestar de nuestros afiliados</h2>       
+            <section class="insti__ap">
+                <img src="../assets/autoridades.jpg" alt="autor" width="50%"/>
+                <a class="insti__ap__enlace bloque" href="./autoridades.html">Autoridades del Programa</a>
+            </section>
+            <section class="insti__qs">
+                <img src="../assets/quienes.jpg" alt="quienes" width="50%"/>
+                <a class=" insti__qs__enlace bloque" href="./quienes_somos.html">Quienes Somos</a>
+            </section>
+        </section>
+    </main>
+    <footer class="pie">
+        <!-- accesos con referencias relativas -->
+        <a href="../index.html">
+            <img src="../assets/inhe.png" alt="logo" width="150"/>
+        </a>
+        <a href="../pages/institucional.html">
+            <h4 class="en-linea">INSTITUCIONAL</h4>
+        </a>
+        <a href="../pages/contacto.html">
+            <h4 class="en-linea">CONTACTO</h4>
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Include Health Program</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body >
+    <!-- inicio cabecera de la pagina -->
+    <header>
+        <section class="cabecera" >
+            <!-- inicio logo y navegador -->
+            <img class="cabecera__princ" src="./assets/inhe.png" alt="logo" width="300" />
+            <nav>
+                <!-- navegador con lista desordenada -->
+                <ul class="cabecera__lista">
+                    <li class="cabecera__lista__elemento ">
+                        <a  href="./index.html">Home</a>
+                    </li>
+                    <li class="cabecera__lista__elemento">
+                        <a href="./pages/prestaciones.html">Prestaciones</a>
+                    </li>
+                    <li class="cabecera__lista__elemento">
+                        <a href="./pages/institucional.html">Institucional</a>
+                        <ul>
+                            <li class="cabecera__lista__elemento en-linea">
+                                <a href="./pages/autoridades.html">Autoridades</a>
+                            </li>
+                            <li class="cabecera__lista__elemento en-linea">
+                                <a href="./pages/quienes_somos.html">Quienes somos</a>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                    <li class="cabecera__lista__elemento">
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- fin logo y navegador -->
+        </section>
+    </header>
+    <!-- fin de la cabecera e inicio del cuerpo principal de la pagina -->
+    <main class="contenedor parallax">
+        <section class="portada">
+            <h1>Incluir es... <br> dar la bienvenida.</h1>
+        </section>
+        <section class="nota">
+            
+            <img src="./assets/images1.jpg" alt="imagen1" width="40%" height="80%" />
+            <article class="nota__1">
+                <h2>El Programa Include Healh es un programa que promueve el fortalecimiento de la atención sanitaria de los ciudadanos en el servicio público de salud.</h2>
+                <br/>
+                <p>
+                    Include Healh está dirigido a titulares de Pensiones No Contributivas (PNC), que no cuenten con asistencia de servicios de salud tales como obras sociales, y que voluntariamente se conviertan en afiliados al programa.
+                </p>
+                <br/>
+                <p>
+                    En este sentido, el fortalecimiento antes mencionado, no se concretará mediante la transmisión directa de recursos económicos, sino más bien a través de la entrega directa a los beneficiarios (cumpliendo los circuitos para ello dispuestos) de medicamentos de alto y bajo costo, pañales, insumos (prótesis, ortesis) y servicios como radioterapias, internaciones domiciliarias, soporte nutricional y oxigenoterapia domiciliaria, entre otros.
+                </p>
+            </article>
+        </section>
+        <!-- inicio seccion de imagenes con accesos a prestaciones -->        
+        <h2 class="presta__titulo">PRESTACIONES</h2>
+       
+        
+        <div class="acceso1">
+            <a href="./pages/prestaciones.html">
+                <div>
+                    <img  src="./assets/discapacidad.jpg" alt="discapacidad" width="350" height="300" />
+                </div>
+                <div>
+                    Discapacidad y Salud Mental
+                </div>
+            </a>
+        </div>
+        <div class="acceso2">
+            <a href="./pages/prestaciones.html">
+                <div>
+                    <img src="./assets/protesis.jpg" alt="protesis" width="350" height="300"/>
+                </div>
+                <div>
+                    Prótesis
+                </div>
+            </a>
+        </div>
+        <div class="acceso3">
+            <a href="./pages/prestaciones.html">
+                <div>
+                    <img src="./assets/pmo.jpg" alt="pmo" width="350" height="300"/>
+                </div>
+                <div>
+                    Programa Médico Obligatorio
+                </div>
+            </a>
+        </div>
+
+        <!-- sección de Estadisticas con tabla de Afiliados -->
+        <section class="tabla">
+            <h2 class="tabla__titulo">ESTADISTICAS</h2>
+            <h3 class="tabla__titulo">AFILIADOS</h3>
+            <table class="tabla__tabla" border="1">
+                <thead>
+                    <tr>
+                        <th>PROVINCIA</th>
+                        <th>TITULARES</th>
+                        <th>FAMILIARES</th>
+                        <th>TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buenos Aires</td>
+                        <td>25.000</td>
+                        <td>36.000</td>
+                        <td>61.000</td>
+                    </tr>
+                    <tr>
+                        <td>Córdoba</td>
+                        <td>12.000</td>
+                        <td>18.000</td>
+                        <td>30.000</td>
+                    </tr>
+                    <tr>
+                        <td>Mendoza</td>
+                        <td>8.000</td>
+                        <td>13.000</td>
+                        <td>21.000</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Fe</td>
+                        <td>10.000</td>
+                        <td>20.000</td>
+                        <td>30.000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Totales</td>
+                        <td>55.000</td>
+                        <td>87.000</td>
+                        <td>142.000</td>
+                    </tr>
+                </tfoot>
+			</table>
+        </section>
+    </main>
+    <!-- inicio de pie de pagina --> 
+	<footer class="pie">
+        <!-- accesos con referencias relativas -->
+        <a href="./index.html">
+            <img src="./assets/inhe.png" alt="logo" width="150"/>
+        </a>
+        <a href="./pages/institucional.html">
+            <h4 class="en-linea">INSTITUCIONAL</h4>
+        </a>
+        <a href="./pages/contacto.html">
+            <h4 class="en-linea">CONTACTO</h4>
+        </a>
+    </footer>
+</body>
+</html>
