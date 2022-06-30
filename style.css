@@ -57,7 +57,10 @@ td{
     color: #ffffff;
     text-shadow: 0 0 15px black;
 }
+.portada h1:hover {
+    color: dodgerblue;
 
+}
 .cabecera{
     width: 100%;
     background-image:url(./assets/descargar.webp);
@@ -132,13 +135,21 @@ td{
 }
 .acceso1{
     grid-area: acceso1;
+    transition: 0.3s;
 }
 .acceso2{
     grid-area: acceso2;
+    transition: 0.3s;
 }
 .acceso3{
     grid-area: acceso3;
+    transition: 0.3s;
 }
+
+.acceso1:hover, .acceso2:hover, .acceso3:hover{
+    transform: scale(1.05, 1.05);     
+}
+
 .tabla{
     grid-area: tabla;
 }
@@ -315,6 +326,29 @@ main{
     margin-bottom: 50px;
 }
 
+.insti__ap__enlace:hover, .insti__qs__enlace:hover{
+
+    animation: mover 2s infinite;
+
+}
+@keyframes mover {
+    0%{
+        transform: rotate(5deg);
+        font-size: larger;
+        text-shadow: 0 0 15px black;
+    }
+    50%{
+        transform: rotate(-5deg);
+        text-shadow: 0 0 15px black;
+    }
+    100%{
+        transform: rotate(5deg);
+        font-size: larger;
+        text-shadow: 0 0 15px black;
+    }
+    
+}
+
 .insti__qs__enlace{
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -330,6 +364,11 @@ main{
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 30px;
+    transition: 0.2s;
+}
+.l_autoridades div:hover{
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
 .l_autoridades__titulo{
@@ -425,6 +464,26 @@ main{
 .main__form{
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+}
+
+.main__form img{
+    width: 50px;
+    position: absolute;
+    animation: senalar 10s infinite;
+}
+
+@keyframes senalar {
+    0%{
+        transform: translate(-65px, 0px);
+    }
+    50%{
+        transform: translate(-65px, 410px);
+    }
+    100%{
+        transform: translate(-65px, 0px);
+    }
+    
 }
 
 .form__grid1{
@@ -566,7 +625,11 @@ main{
     
     .acceso1, .acceso2, .acceso3{
         margin: 0;
-    }   
+    }     
+
+    .main__form img{
+        display: none;
+    } 
 }
 
 
@@ -600,12 +663,17 @@ main{
     .main__form fieldset{
         width: 70%; 
     }
+
     .pie a{
         color: white;
         font-size: 100%;
     }
     .main img{
         width: 65%;
+    }
+    .main__form img{
+        width: 50px;
+        display: block;
     }
     .prote__title{
         padding: 10px 3rem;
@@ -695,6 +763,10 @@ main{
     }
     .nota__1{
         padding: 15px 15px;
+    }
+    .main__form img{
+        
+        display: none;
     }
 }
 
@@ -786,6 +858,7 @@ main{
         width: 280px;
         height: 250px;
     }
+    
     .nota{
         padding-left: 10px
     }
