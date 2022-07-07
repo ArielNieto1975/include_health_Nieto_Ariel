@@ -61,6 +61,13 @@ td{
     color: dodgerblue;
 
 }
+
+.portada h1:hover::after{
+    content: url(./assets/feliz.png);
+    
+}
+
+
 .cabecera{
     width: 100%;
     background-image:url(./assets/descargar.webp);
@@ -275,7 +282,11 @@ main{
 
 .disca__video{
   padding-top: 30px;    
-  
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.disca__video:hover{
+    transform: scale(1.1, 1.1);
 }
 
 .prote{
@@ -324,16 +335,17 @@ main{
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 50px;
+    transition: 0.3s;
 }
 
 .insti__ap__enlace:hover, .insti__qs__enlace:hover{
 
-    animation: mover 2s infinite;
+    animation: mover 5s infinite;
 
 }
 @keyframes mover {
     0%{
-        transform: rotate(5deg);
+        transform: rotate(2deg);
         font-size: larger;
         text-shadow: 0 0 15px black;
     }
@@ -369,6 +381,8 @@ main{
 .l_autoridades div:hover{
     padding: 15px;
     background-color: rgba(128, 128, 128, 0.3);
+    font-weight: bold;
+    color: darkblue;
 }
 
 .l_autoridades__titulo{
