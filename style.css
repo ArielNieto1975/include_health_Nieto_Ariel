@@ -430,17 +430,6 @@ main{
 }
 
 /* css page quienes somos */
-.about{
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 1.3rem;
-    text-align: justify;
-}
-
-.about img{
-    width: 100%;
-    margin-bottom: auto;
-}
 .about__datos{
     margin: 20px 50px;
     line-height: 1.5;
