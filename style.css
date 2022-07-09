@@ -523,9 +523,9 @@ main{
 .form__grid3{ 
     display: flex;  
     justify-content: center;  
+    align-items: center;
 }
 .main__form fieldset{
-    margin: 1%;
     width: 40%;
     text-align: center;
     border-radius: 10px;    
@@ -536,7 +536,9 @@ main{
     margin-top: 20px;
     transition: 0.3s;
 }
-
+.form__boton button{
+    transition: 0.3s;
+}
 .form__boton button:hover{
     color: chartreuse;
     transform: scale(1.1, 1.1);
@@ -555,9 +557,15 @@ main{
 .main__info{
     display: flex;
     flex-flow: row wrap;
-    
     justify-content: space-evenly;
     align-items: center;
+}
+.main__info iframe{
+    transition: 0.3s;
+}
+
+.main__info iframe:hover{
+    transform: scale(1.1, 1.1);
 }
 
 .main__info ul{
