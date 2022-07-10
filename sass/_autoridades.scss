@@ -1,0 +1,55 @@
+/* css page autoridades */
+.l_autoridades{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    & div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: 30px;
+        transition: 0.2s;
+        &:hover{
+            padding: 15px;
+            background-color: rgba(128, 128, 128, 0.3);
+            font-weight: bold;
+            color: darkblue;
+        }
+    }
+    &__titulo{
+        font-size: 25px ;
+        padding-bottom: 30px;
+        margin: auto 0;
+        width: 152.31px;
+    }
+    &__descrtpcion{
+        background-color: rgba(128, 128, 128, 0.2);
+        border-radius: 15px;
+        font-style: italic;
+        text-align: justify;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 2% 0;
+        & dt{
+            margin: 1% 2%;
+        }
+        
+        & dd{
+            margin: 1% 5%;
+        }
+    }
+    &__img{
+        width: 300px;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 0 25px 80px -10px rgba(102, 13, 110, 0.5);
+    }
+    
+}
+// medias
+
+@media (max-width: 1024px){
+    .l_autoridades__descrtpcion{
+        width: 70%;
+    }
+}

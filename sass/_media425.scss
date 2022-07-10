@@ -1,0 +1,97 @@
+@media (max-width: 425px ){
+    .contenedor{
+        grid-template-rows: 0.5fr 0.5fr 50px repeat(3, 0.3fr) 0.3fr;
+    }
+
+    .cabecera__princ{
+        width: 150px;
+        margin-top: 20px;
+        margin-right: 25px;
+    }
+
+    .portada{
+        font-size: 1.5rem;
+    }
+    .cabecera__titulo{
+        font-size: 150%;
+    }
+    .about{
+        font-size: 1rem;
+        &__datos{
+            margin: 10px 20px;
+            line-height: 1.2;
+            & p{
+                font-size: 1rem;
+            }
+        }
+    }
+    
+    .form__grid1{
+        grid-template-columns: 1fr;
+    }
+    .form__grid2{
+        grid-template-columns: 1fr;
+    }
+    .form__boton{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main__form button{
+        width: 60%;
+        margin: auto;        
+    }
+    .main img{
+        width: 80%;
+    }
+    
+    .l_autoridades__img{
+        width: 240px;
+        height: 200px;
+    }
+    .l_autoridades__descrtpcion dd{
+        margin: 5% 5%;
+    }
+
+    .insti{
+        font-size: 1.2rem;
+        &_titulo{
+            font-size: large;
+        }
+    }
+    .disca__parrafo{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .disca__video{
+        width: 80%;
+        height: 80%;
+    }
+    .prote iframe{
+        width: 75%;
+        height: 50%;
+    }
+    .prote__title{
+        padding: 10px 20px;
+    }
+    .prote__text{
+        padding-left: 50px;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .presta__titulo{
+        padding-top: 15px;
+    }
+
+    .acceso1 img, .acceso2 img, .acceso3 img{
+        width: 280px;
+        height: 250px;
+    }
+    
+    .nota{
+        padding-left: 10px
+        & img{
+            width: 90%;
+        }
+    }
+
+}

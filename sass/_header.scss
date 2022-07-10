@@ -1,0 +1,54 @@
+/* hace que cambie el color cuando se pasa el mouse por arriba de navbar */
+li a:hover{
+    background-color: #434343;
+}
+
+li a:link{
+    text-decoration: none;
+    display: block;
+    background-color: #3f1e68;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cabecera{
+    width: 100%;
+    background-image:url(../assets/descargar.webp);
+    background-size: contain;
+    position: fixed;
+    text-align: center;
+    padding-top: 2px;
+    z-index: 1;
+    & IMG{
+        border-radius: 10px;
+    }
+    &__lista{
+        list-style-type: none;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        & li ul{
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+        & li:hover > ul{
+            display: block;
+        }
+        & > li{
+            float: left;
+        }
+        &__elemento a{
+            color: $colorlight;
+            font-weight: bold;
+        }
+    }
+    &__titulo{
+        font-size: 250%;
+        padding-top: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: aqua;
+        text-shadow: $shadowdark;
+    }
+}

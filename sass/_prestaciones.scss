@@ -1,0 +1,36 @@
+.disca{
+    text-align: center;
+    padding-bottom: 50px;
+    &__parrafo{
+        padding: 10px 80px;
+        text-align: justify;
+        font-size: x-large;
+    }
+    &__video{
+        margin-top: 30px;    
+        border-radius: 10px;
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1, 1.1);
+            box-shadow: $shadowdark;
+        }
+      }
+}
+
+.prote{
+    text-align: center;
+    padding-bottom: 50px;
+    &__title{
+        padding: 10px 150px;
+        text-align: justify;
+    }
+    &__text{
+        padding: 10px 80px 10px 380px;
+        text-align: justify;
+        text-shadow: $shadowdark;
+        font-size: 1.5rem;
+    }
+}
+.pmo p{
+    font-size: 1.3rem;
+}

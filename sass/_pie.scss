@@ -1,0 +1,24 @@
+.pie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    background-image: url(../assets/fondo_footer.webp);
+    background-size: cover;
+    padding: 10px 10px 0px 30px;
+    height: auto;
+    & a{
+        color: $colorlight;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 150%;
+        text-decoration: none;
+        margin: auto;
+        &:hover{
+            color: rgb(246, 177, 93);
+        }
+    }
+}
+.cabecera__logo{
+    position: absolute;
+    padding: 20px;
+    left: 10%;
+}

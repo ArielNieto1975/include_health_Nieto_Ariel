@@ -1,0 +1,63 @@
+@media (max-width: 530px ){
+    main{
+        padding-top: 5rem;
+    }  
+    
+    .pie{
+        grid-template-columns: 1fr;
+    }
+    .l_autoridades__descrtpcion{
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;               
+    }
+   
+    .l_autoridades__titulo{
+        text-align: center;
+    }
+    .insti_titulo{
+        font-size: x-large;
+    
+    }
+    .insti__ap img{
+        width: 80%;
+    }
+    .insti__qs img{
+        width: 80%;
+    }
+    .disca__parrafo{
+        padding: 10px 40px;
+        font-size: large;
+    }
+    .disca__video{
+        width: 80%;
+    }
+    .prote iframe{
+        width: 80%;
+    }
+    .prote_main section img{
+        height: 30%;
+    }
+   
+    .tabla__tabla{
+        padding: 8px 5px;
+        width: 85%;
+    }
+  
+    .tabla__titulo{
+        font-size: 5fr;
+    }
+    .tabla th, td{
+        font-size: 0.8rem;        
+    }
+    .nota{
+        margin: 20px 0 auto;
+    }
+    .nota__1{
+        padding: 15px 15px;
+    }
+    .main__form img{
+        
+        display: none;
+    }
+}
