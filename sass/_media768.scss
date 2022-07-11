@@ -1,0 +1,73 @@
+@media (max-width: 768px ){
+    .cabecera__lista{
+        display: none;
+    }
+  
+    .contenedor{
+        grid-template-rows: 0.8fr 0.5fr 50px repeat(3, 0.5fr) 0.3fr;
+    }
+    .form__grid1{
+        grid-template-columns: 0.5fr 2fr;
+    }
+    .cabecera__titulo{
+        font-size: 200%;
+    }
+    
+    .main__encabeza h4{
+        font-size: large;
+    }
+    .main__info{
+        flex-direction: column;
+    }
+
+    .main__info ul{
+        line-height: 2;
+        font-size: large; 
+        margin-bottom: 35px;       
+    }
+    .main__form fieldset{
+        width: 70%; 
+    }
+    
+
+    .pie a{
+        color: $colorlight;
+        font-size: 100%;
+    }
+    .main img{
+        width: 65%;
+    }
+    .main__form img{
+        width: 50px;
+        display: block;
+    }
+    .prote__title{
+        padding: 10px 3rem;
+    }
+    .prote__text{
+        padding-left: 100px;
+        font-size: 1.2rem;
+    }
+
+    .presta__titulo{
+        font-size: 1.5rem;
+        padding-top: 30px;
+        max-width: auto;
+    }
+
+    .tabla{
+        font-size: 1rem;
+        justify-items: center;
+    }
+    .tabla__tabla{
+        padding: 30px 30px;
+        width: 80%;
+    }
+    .portada{
+        font-size: 2rem;
+    }
+    .nota{
+        padding-left: 20px;
+        margin: 20px 0 auto;
+    }
+}

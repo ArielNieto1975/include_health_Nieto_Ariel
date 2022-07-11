@@ -1,0 +1,22 @@
+{
+  "name": "include_helath-nieto_ariel",
+  "version": "1.0.0",
+  "description": "Proyecto Curso Coder",
+  "main": "index.js",
+    "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArielNieto1975/include_health_Nieto_Ariel.git"
+  },
+  "author": "Ariel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArielNieto1975/include_health_Nieto_Ariel/issues"
+  },
+  "homepage": "https://github.com/ArielNieto1975/include_health_Nieto_Ariel#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

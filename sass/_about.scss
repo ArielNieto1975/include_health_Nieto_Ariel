@@ -1,0 +1,25 @@
+/* css page quienes somos */
+.about__datos{
+    margin: 20px 50px;
+    line-height: 1.5;
+
+    & p{
+        font-size: 1.3rem;
+    }
+
+    & h3{
+        font-family: fantasy;
+        font-weight: lighter;
+        margin-top: 20px;
+    }
+    & ul{
+        list-style-type: none ;
+        font-weight: bold;
+    }
+    & ol li{
+        font-weight: lighter;
+    }
+}
+
+
+

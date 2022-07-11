@@ -1,0 +1,201 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr 100px repeat(2, 0.5fr);
+    gap: 1rem;
+    grid-template-areas: 
+             "portada portada portada"
+             "nota nota nota"
+             "presta__titulo presta__titulo presta__titulo"          
+             "acceso1 acceso2 acceso3"          
+             "tabla tabla tabla"          
+        ;
+}
+.portada{
+    grid-area: portada;
+    background-image: url(../assets/header_index.webp);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    font-family: dmsansbold;
+    font-size: 3rem;
+    color: $colorlight;
+    text-shadow: $shadowdark;
+    &  h1:hover {
+        color: dodgerblue; 
+        &::after{
+            content: url(../assets/feliz.png);    
+        }   
+    }
+}
+
+.nota{
+    grid-area: nota;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    margin: 50px 0 auto;
+    & img{
+        margin-top: 1.5rem;
+        border-radius: 10px;
+    } 
+    &__1{
+        width: 50%;
+        padding: 0px 50px;
+        right: 0;
+        top: 0;
+        text-align: justify;    
+    }
+}
+.presta__titulo{
+    grid-area: presta__titulo;
+    background-color: $bgtraslucido;
+    font-size: 2.5rem;
+    text-shadow: $shadowdark;
+    color: #ff0000;
+    text-align: center;
+    padding: 20px ; 
+}
+.acceso1{
+    grid-area: acceso1;
+    transition: 0.3s;
+}
+.acceso2{
+    grid-area: acceso2;
+    transition: 0.3s;
+}
+.acceso3{
+    grid-area: acceso3;
+    transition: 0.3s;
+}
+.acceso1, .acceso2, .acceso3 {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  
+    margin-bottom: 50px;  
+}
+.acceso1 a, .acceso2 a, .acceso3 a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold ;    
+}
+.acceso1 a div, .acceso2 a div, .acceso3 a div{
+    background-color: aliceblue;     
+}
+.acceso1:hover, .acceso2:hover, .acceso3:hover{
+    transform: scale(1.05, 1.05); 
+    background-color: $bgtraslucido; 
+    border-radius: 10px;
+    & div{
+        background-color: $bgtraslucido;
+    }   
+}
+
+.tabla{
+    grid-area: tabla;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    &__titulo{
+        background-color: $bgtraslucido;
+        margin-bottom: 10px;
+        text-shadow: $shadowdark;
+        color: red;
+       padding: 15px;
+    }
+    &__tabla{
+        margin: 0 150px;
+        padding: 50px 80px;    
+    }
+}
+
+// inicio medias 
+@media (max-width: 1146px){
+    .cabecera__princ{
+        margin-right: 40%;
+    }
+    .contenedor{
+        grid-template-rows: 0.8fr 0.5fr 100px repeat(3, 0.5fr);
+        grid-template-columns: 1fr 0.5fr 1f;
+        grid-template-areas: 
+             "portada portada portada"
+             "nota nota nota"
+             "presta__titulo presta__titulo presta__titulo"          
+             "acceso1 . acceso2"  
+             "acceso3 acceso3 acceso3"         
+             "tabla tabla tabla";
+    }
+
+    .acceso1{
+        margin-left: 35%;
+    }
+    .acceso2{
+        margin-right: 35%;
+    }
+    .nota{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        &__1{
+            width: auto;
+            padding-top: 15px auto;
+        }
+        &  img{
+            width: 70%;
+        }
+    }
+
+}
+
+@media (max-width: 1024px){
+    .cabecera__logo{
+        padding: 3px;
+    }
+    .nota{
+        padding-left: 10px;
+    }
+    .tabla__tabla{
+        margin: 0 auto;  
+    }
+}
+
+@media (max-width: 850px ){
+  
+    .cabecera__princ{
+        width: 200px;
+    }
+    .cabecera{
+        height: 89px;
+    }
+    .contenedor{
+        grid-template-rows: 0.8fr 0.5fr 100px repeat(4, 0.5fr);
+        grid-template-columns: 1fr 0.5fr 1f;
+        grid-template-areas: 
+             "portada portada portada"
+             "nota nota nota"
+             "presta__titulo presta__titulo presta__titulo"          
+             "acceso1 acceso1 acceso1"  
+             "acceso2 acceso2 acceso2"  
+             "acceso3 acceso3 acceso3"       
+             "tabla tabla tabla";
+    }
+    
+    .acceso1, .acceso2, .acceso3{
+        margin: 0;
+    }     
+
+}
+
+
+
+
