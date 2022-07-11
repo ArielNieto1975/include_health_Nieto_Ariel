@@ -120,7 +120,7 @@ li a:link {
 
 .presta__titulo {
   grid-area: presta__titulo;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(1, 1, 24, 0.2);
   font-size: 2.5rem;
   text-shadow: 0 0 15px black;
   color: #ff0000;
@@ -157,7 +157,11 @@ li a:link {
   background-color: aliceblue; }
 
 .acceso1:hover, .acceso2:hover, .acceso3:hover {
-  transform: scale(1.05, 1.05); }
+  transform: scale(1.05, 1.05);
+  background-color: rgba(1, 1, 24, 0.2);
+  border-radius: 10px; }
+  .acceso1:hover div, .acceso2:hover div, .acceso3:hover div {
+    background-color: rgba(1, 1, 24, 0.2); }
 
 .tabla {
   grid-area: tabla;
@@ -167,7 +171,7 @@ li a:link {
   align-content: center;
   flex-direction: column; }
   .tabla__titulo {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(1, 1, 24, 0.2);
     margin-bottom: 10px;
     text-shadow: 0 0 15px black;
     color: red;
@@ -328,7 +332,7 @@ li a:link {
     margin: auto 0;
     width: 152.31px; }
   .l_autoridades__descrtpcion {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgba(1, 1, 24, 0.2);
     border-radius: 15px;
     font-style: italic;
     text-align: justify;
@@ -378,7 +382,7 @@ li a:link {
     width: 50%; }
   .main__encabeza h4 {
     font-size: x-large;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(1, 1, 24, 0.2);
     text-align: center;
     padding: 1% 3%;
     text-align: justify; }
