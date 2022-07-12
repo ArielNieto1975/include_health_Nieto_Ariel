@@ -61,42 +61,45 @@
     text-align: center;
     padding: 20px ; 
 }
-.acceso1{
-    grid-area: acceso1;
-    transition: 0.3s;
-}
-.acceso2{
-    grid-area: acceso2;
-    transition: 0.3s;
-}
-.acceso3{
-    grid-area: acceso3;
-    transition: 0.3s;
-}
-.acceso1, .acceso2, .acceso3 {
+// EXTENDS
+.acceso-gral{
     text-align: center;
     padding-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;  
-    margin-bottom: 50px;  
+    margin-bottom: 50px; 
+    transition: 0.3s;
+    & a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold ;
+        & div{
+            background-color: aliceblue; 
+        }
+    }
+    &:hover{
+        transform: scale(1.05, 1.05); 
+        background-color: $bgtraslucido; 
+        border-radius: 10px;
+            & div{
+            background-color: $bgtraslucido;
+        }
+    }
 }
-.acceso1 a, .acceso2 a, .acceso3 a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold ;    
+
+.acceso1{
+    @extend .acceso-gral;
+    grid-area: acceso1;
 }
-.acceso1 a div, .acceso2 a div, .acceso3 a div{
-    background-color: aliceblue;     
+.acceso2{
+    @extend .acceso-gral;
+    grid-area: acceso2;
 }
-.acceso1:hover, .acceso2:hover, .acceso3:hover{
-    transform: scale(1.05, 1.05); 
-    background-color: $bgtraslucido; 
-    border-radius: 10px;
-    & div{
-        background-color: $bgtraslucido;
-    }   
+.acceso3{
+    @extend .acceso-gral;
+    grid-area: acceso3;
 }
 
 .tabla{
