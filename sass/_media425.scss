@@ -10,18 +10,18 @@
     }
 
     .portada{
-        font-size: 1.5rem;
+        font-size: $fontrem1_5;
     }
     .cabecera__titulo{
         font-size: 150%;
     }
     .about{
-        font-size: 1rem;
+        font-size: $fontrem1;
         &__datos{
             margin: 10px 20px;
             line-height: 1.2;
             & p{
-                font-size: 1rem;
+                font-size: $fontrem1;
             }
         }
     }
@@ -53,14 +53,14 @@
     }
 
     .insti{
-        font-size: 1.2rem;
+        font-size: $fontrem1_2;
         &_titulo{
             font-size: large;
         }
     }
     .disca__parrafo{
         padding: 10px 20px;
-        font-size: 20px;
+        font-size: $font2;
     }
     .disca__video{
         width: 80%;
@@ -75,7 +75,7 @@
     }
     .prote__text{
         padding-left: 50px;
-        font-size: 1.2rem;
+        font-size: $fontrem1_2;
         text-align: left;
     }
     .presta__titulo{

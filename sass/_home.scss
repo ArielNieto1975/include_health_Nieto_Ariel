@@ -23,7 +23,7 @@
     background-attachment: fixed;
     background-position-x: center;
     font-family: dmsansbold;
-    font-size: 3rem;
+    font-size: $fontrem3;
     color: $colorlight;
     text-shadow: $shadowdark;
     &  h1:hover {
@@ -55,7 +55,7 @@
 .presta__titulo{
     grid-area: presta__titulo;
     background-color: $bgtraslucido;
-    font-size: 2.5rem;
+    font-size: $fontrem2_5;
     text-shadow: $shadowdark;
     color: #ff0000;
     text-align: center;
@@ -73,7 +73,7 @@
     transition: 0.3s;
     & a{
         text-decoration: none;
-        font-size: 20px;
+        font-size: $font2;
         font-weight: bold ;
         & div{
             background-color: aliceblue; 
@@ -105,7 +105,7 @@
 .tabla{
     grid-area: tabla;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: $fontrem1_5;
     display: flex;
     align-content: center;
     flex-direction: column;

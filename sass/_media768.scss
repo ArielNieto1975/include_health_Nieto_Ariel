@@ -46,17 +46,17 @@
     }
     .prote__text{
         padding-left: 100px;
-        font-size: 1.2rem;
+        font-size: $fontrem1_2;
     }
 
     .presta__titulo{
-        font-size: 1.5rem;
+        font-size: $fontrem1_5;
         padding-top: 30px;
         max-width: auto;
     }
 
     .tabla{
-        font-size: 1rem;
+        font-size: $fontrem1;
         justify-items: center;
     }
     .tabla__tabla{
@@ -64,7 +64,7 @@
         width: 80%;
     }
     .portada{
-        font-size: 2rem;
+        font-size: $fontrem2;
     }
     .nota{
         padding-left: 20px;

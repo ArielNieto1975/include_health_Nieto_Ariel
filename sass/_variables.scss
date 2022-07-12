@@ -2,3 +2,14 @@
 $shadowdark: 0 0 15px black;
 $colorlight: #ffffff;
 $bgtraslucido: rgba(1, 1, 24, 0.2);
+// operadores
+$font1: 18px;
+$font2: $font1 + 2;
+$font3: $font1 + 7;
+$fontrem1: 1rem;
+$fontrem1_2: $fontrem1 * 1.2;
+$fontrem1_5: $fontrem1 * 1.5;
+$fontrem2: $fontrem1 * 2;
+$fontrem2_5: $fontrem1 * 2.5;
+$fontrem3: $fontrem1 * 3;
+
