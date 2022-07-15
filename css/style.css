@@ -287,12 +287,14 @@ li a:link {
     margin-bottom: 50px;
     transition: 0.3s; }
     .insti__ap__enlace:hover {
-      animation: mover 5s infinite; }
+      animation: mover 5s infinite;
+      color: #23f9a4; }
   .insti__qs__enlace {
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
     .insti__qs__enlace:hover {
-      animation: mover 5s infinite; }
+      animation: mover 5s infinite;
+      color: #4828fb; }
 
 @keyframes mover {
   0% {
@@ -498,7 +500,7 @@ li a:link {
     font-size: 1.2rem; }
   .presta__titulo {
     font-size: 1.5rem;
-    padding-top: 30px;
+    padding-top: 10px;
     max-width: auto; }
   .tabla {
     font-size: 1rem;

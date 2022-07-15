@@ -13,22 +13,25 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #2f4f4f;
     }
-    &__ap__enlace{
+    // inicio mixin
+    @mixin insti_base($fcolor) {
         text-decoration: none;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        &:hover{
+            animation: mover 5s infinite;
+            color: $fcolor;
+        }
+    }
+    &__ap__enlace{
+        @include insti_base(rgb(35, 249, 164))
         margin-bottom: 50px;
         transition: 0.3s;
-        &:hover{
-            animation: mover 5s infinite;
-        }
+        
     }
     &__qs__enlace{
-        text-decoration: none;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        &:hover{
-            animation: mover 5s infinite;
-        }
+        @include insti_base(rgb(72, 40, 251));
     }
+    // fin mixin
 }
 
 @keyframes mover {
