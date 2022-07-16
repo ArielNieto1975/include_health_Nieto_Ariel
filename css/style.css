@@ -1,6 +1,7 @@
 @font-face {
   font-family: dmsansbold;
-  src: url(../font/DMSans-Bold.ttf); }
+  src: local("sans-serif") url(../font/DMSans-Bold.ttf);
+  font-display: swap; }
 
 * {
   margin: 0; }
