@@ -174,12 +174,18 @@
 
 @media (max-width: 850px ){
   
-    .cabecera__princ{
-        width: 200px;
-    }
+   
     .cabecera{
         height: 89px;
+        &__princ{
+            width: 200px;
+            height: 87px;
+        }
+        & a{
+            padding-top: 1px;
+        }
     }
+    
     .contenedor{
         grid-template-rows: 0.8fr 0.5fr 100px repeat(4, 0.5fr);
         grid-template-columns: 1fr 0.5fr 1f;
