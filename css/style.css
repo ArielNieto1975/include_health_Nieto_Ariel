@@ -222,20 +222,28 @@ li a:link {
 
 .pie {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   background-image: url(../assets/fondo_footer.webp);
   background-size: cover;
-  padding: 10px 10px 0px 30px;
+  padding: 10px 30px 10px 30px;
   height: auto; }
   .pie a {
-    color: #ffffff;
+    color: deepskyblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 150%;
+    font-size: 100%;
     text-decoration: none;
-    margin: auto; }
+    padding-left: 20px; }
     .pie a:hover {
       color: #f6b15d; }
+  .pie__insti {
+    display: grid;
+    grid-template-columns: auto; }
+    .pie__insti-uno h4 {
+      font-size: 75%;
+      color: #ffffff; }
+      .pie__insti-uno h4:hover {
+        color: #f6b15d; }
 
 .cabecera__logo {
   position: absolute;
@@ -489,9 +497,8 @@ li a:link {
     margin-bottom: 35px; }
   .main__form fieldset {
     width: 70%; }
-  .pie a {
-    color: #ffffff;
-    font-size: 100%; }
+  .pie {
+    grid-template-columns: repeat(3, 1fr); }
   .main img {
     width: 65%; }
   .main__form img {

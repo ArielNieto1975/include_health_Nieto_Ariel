@@ -29,11 +29,10 @@
         width: 70%; 
     }
     
-
-    .pie a{
-        color: $colorlight;
-        font-size: 100%;
+    .pie{
+        grid-template-columns: repeat(3, 1fr);
     }
+
     .main img{
         width: 65%;
     }
