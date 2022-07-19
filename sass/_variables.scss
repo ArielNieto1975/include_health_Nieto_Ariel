@@ -2,6 +2,7 @@
 $shadowdark: 0 0 15px black;
 $colorlight: #ffffff;
 $bgtraslucido: rgba(1, 1, 24, 0.2);
+
 // operadores
 $font1: 18px;
 $font2: $font1 + 2;
@@ -12,4 +13,20 @@ $fontrem1_5: $fontrem1 * 1.5;
 $fontrem2: $fontrem1 * 2;
 $fontrem2_5: $fontrem1 * 2.5;
 $fontrem3: $fontrem1 * 3;
+
+// maps
+$redes: (
+    whatsapp: rgb(109, 248, 133),
+    instagram: #c92d8f,
+    twitter: #55acee,
+    facebook: rgb(81, 81, 250),        
+);
+@each $nombre, $color in $redes {
+    .link-#{$nombre} {
+        margin: 5px 5px;
+        padding: 10PX;
+        border-radius: 50px;
+        background-color: $color;
+    }
+};
 
