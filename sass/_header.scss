@@ -12,6 +12,20 @@ li a:link{
     border-radius: 5px;
 }
 
+.checkbtn{
+    font-size: 30px;
+    color: $colorlight;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+#check{
+    display: none;
+}
+
+
 .cabecera{
     width: 100%;
     background-image:url(../assets/descargar.webp);

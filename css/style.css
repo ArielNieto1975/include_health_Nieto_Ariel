@@ -67,6 +67,18 @@ li a:link {
   padding: 10px;
   border-radius: 5px; }
 
+.checkbtn {
+  font-size: 30px;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+  margin-right: 40px; }
+
+#check {
+  display: none; }
+
 .cabecera {
   width: 100%;
   background-image: url(../assets/descargar.webp);
@@ -504,7 +516,27 @@ li a:link {
 
 @media (max-width: 768px) {
   .cabecera__lista {
-    display: none; }
+    right: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    top: 91px;
+    left: -120%;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s; }
+    .cabecera__lista__elemento {
+      display: block;
+      margin: 10px 60px 0 0;
+      line-height: 30px; }
+      .cabecera__lista__elemento a {
+        font-size: 20px; }
+    .cabecera__lista li ul {
+      display: block;
+      position: relative; }
+  #check:checked ~ nav ul {
+    left: 0; }
   .contenedor {
     grid-template-rows: 0.8fr 0.5fr 50px repeat(3, 0.5fr) 0.3fr; }
   .form__grid1 {
@@ -547,13 +579,20 @@ li a:link {
     font-size: 2rem; }
   .nota {
     padding-left: 20px;
-    margin: 20px 0 auto; } }
+    margin: 20px 0 auto; }
+  .checkbtn {
+    display: block; } }
 
 @media (max-width: 530px) {
   main {
     padding-top: 5rem; }
   .pie {
     grid-template-columns: 1fr; }
+  .cabecera__princ {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 25px; }
   .l_autoridades__descrtpcion {
     width: 100%;
     margin-top: 20px;
@@ -592,15 +631,10 @@ li a:link {
 @media (max-width: 425px) {
   .contenedor {
     grid-template-rows: 0.5fr 0.5fr 50px repeat(3, 0.3fr) 0.3fr; }
-  .cabecera__princ {
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    margin-right: 25px; }
   .portada {
     font-size: 1.5rem; }
   .cabecera__titulo {
-    font-size: 150%; }
+    font-size: 120%; }
   .about {
     font-size: 1rem; }
     .about__datos {

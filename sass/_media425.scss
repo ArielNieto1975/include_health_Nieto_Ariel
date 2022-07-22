@@ -3,18 +3,11 @@
         grid-template-rows: 0.5fr 0.5fr 50px repeat(3, 0.3fr) 0.3fr;
     }
 
-    .cabecera__princ{
-        width: 150px;
-        height: 50px;
-        margin-top: 20px;
-        margin-right: 25px;
-    }
-
     .portada{
         font-size: $fontrem1_5;
     }
     .cabecera__titulo{
-        font-size: 150%;
+        font-size: 120%;
     }
     .about{
         font-size: $fontrem1;
@@ -26,7 +19,7 @@
             }
         }
     }
-    
+
     .form__grid1{
         grid-template-columns: 1fr;
     }
@@ -39,12 +32,12 @@
     }
     .main__form button{
         width: 60%;
-        margin: auto;        
+        margin: auto;
     }
     .main img{
         width: 80%;
     }
-    
+
     .l_autoridades__img{
         width: 240px;
         height: 200px;
@@ -87,7 +80,7 @@
         width: 280px;
         height: 250px;
     }
-    
+
     .nota{
         padding-left: 10px;
         & img{
