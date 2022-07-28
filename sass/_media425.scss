@@ -1,6 +1,6 @@
 @media (max-width: 425px ){
     .contenedor{
-        grid-template-rows: 0.5fr 0.5fr 50px repeat(3, 0.3fr) 0.3fr;
+        grid-template-rows: 0.5fr 0.5fr 50px repeat(3, 0.3fr);
     }
 
     .portada{
@@ -33,10 +33,13 @@
     }
     .main__form button{
         width: 60%;
-        margin: auto;
+        margin: 10px auto;
     }
     .main img{
         width: 80%;
+    }
+    .l_autoridades{
+        padding-left: 0px;
     }
 
     .l_autoridades__img{
@@ -48,7 +51,7 @@
     }
 
     .insti{
-        font-size: $fontrem1_2;
+        font-size: $fontrem1_5;
         &_titulo{
             font-size: large;
         }
@@ -87,6 +90,9 @@
         & img{
             width: 90%;
         }
+    }
+    .tabla{
+        display: none;
     }
 
 }

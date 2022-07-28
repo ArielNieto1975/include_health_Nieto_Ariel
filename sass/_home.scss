@@ -1,5 +1,6 @@
 .contenedor{
     display: grid;
+    padding: 20px 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 0.5fr 100px repeat(2, 0.5fr);
     gap: 1rem;
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-position-x: center;
@@ -43,6 +44,7 @@
     & img{
         margin-top: 1.5rem;
         border-radius: 10px;
+        box-shadow: $shadowdark;
     } 
     &__1{
         width: 50%;
@@ -64,28 +66,31 @@
 // EXTENDS
 .acceso-gral{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;  
-    margin-bottom: 50px; 
-    transition: 0.3s;
+    margin: 10px 0;
+    transition: 0.4s;
     & a{
         text-decoration: none;
-        font-size: $font2;
+        font-family: tahoma;
+        font-size: $font1;
         font-weight: bold ;
+        margin: 10px 0;
         & div{
-            background-color: aliceblue; 
+            // background-color: aliceblue; 
+            & img{
+                border-radius: 10px; 
+            }
         }
     }
     &:hover{
         transform: scale(1.05, 1.05); 
-        background-color: $bgtraslucido; 
+        box-shadow: $shadowdark;
+        // background-color: $bgtraslucido; 
         border-radius: 10px;
-            & div{
-            background-color: $bgtraslucido;
-        }
     }
 }
 
@@ -172,7 +177,7 @@
     }
 }
 
-@media (max-width: 850px ){
+@media (max-width: 900px ){
   
    
     .cabecera{
@@ -184,9 +189,13 @@
         & a{
             padding-top: 1px;
         }
+        &__titulo{
+            font-size: 200%;
+        }
     }
     
     .contenedor{
+        padding: 20px 0;
         grid-template-rows: 0.8fr 0.5fr 100px repeat(4, 0.5fr);
         grid-template-columns: 1fr 0.5fr 1f;
         grid-template-areas: 
