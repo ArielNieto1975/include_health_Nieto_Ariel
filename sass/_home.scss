@@ -85,13 +85,14 @@
                 border-radius: 10px; 
             }
         }
+        &:hover{
+            transform: scale(1.05, 1.05); 
+            box-shadow: $shadowdark;
+            border-radius: 10px;
+            background-color: $bgtraslucido;
+        }
     }
-    &:hover{
-        transform: scale(1.05, 1.05); 
-        box-shadow: $shadowdark;
-        // background-color: $bgtraslucido; 
-        border-radius: 10px;
-    }
+   
 }
 
 .acceso1{

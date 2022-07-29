@@ -1,9 +1,3 @@
-.link-whatsapp {
-  margin: 5px 5px;
-  padding: 10PX;
-  border-radius: 50px;
-  background-color: #6df885; }
-
 .link-instagram {
   margin: 5px 5px;
   padding: 10PX;
@@ -183,10 +177,11 @@ li a:link {
     margin: 10px 0; }
     .acceso-gral a div img, .acceso1 a div img, .acceso2 a div img, .acceso3 a div img {
       border-radius: 10px; }
-  .acceso-gral:hover, .acceso1:hover, .acceso2:hover, .acceso3:hover {
-    transform: scale(1.05, 1.05);
-    box-shadow: 0 0 15px black;
-    border-radius: 10px; }
+    .acceso-gral a:hover, .acceso1 a:hover, .acceso2 a:hover, .acceso3 a:hover {
+      transform: scale(1.05, 1.05);
+      box-shadow: 0 0 15px black;
+      border-radius: 10px;
+      background-color: rgba(1, 1, 24, 0.2); }
 
 .acceso1 {
   grid-area: acceso1; }
@@ -559,6 +554,8 @@ li a:link {
     width: 70%; }
   .pie {
     grid-template-columns: repeat(3, 1fr); }
+    .pie__insti a {
+      font-size: 120%; }
   .main img {
     width: 65%; }
   .main__form img {
@@ -586,6 +583,13 @@ li a:link {
     margin: 20px 0 auto; }
   .checkbtn {
     display: block; } }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .cabecera__lista__elemento {
+    line-height: 15px;
+    margin: 5px 100px 0 40px; }
+    .cabecera__lista__elemento a {
+      font-size: 18px; } }
 
 @media (max-width: 530px) {
   main {
