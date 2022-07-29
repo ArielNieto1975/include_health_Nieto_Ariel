@@ -103,12 +103,10 @@
 
 @media (max-width: 768px ) and (orientation: landscape){
     .cabecera__lista__elemento {
-        line-height: 15px;
-        margin: 5px 100px 0 40px;
+        line-height: 8px;
+        margin: 0 100px 0 40px;
         & a{
             font-size: 18px;
         }
-    }
-    
-   
+    }   
 }

@@ -312,6 +312,8 @@ li a:link {
     text-align: justify;
     text-shadow: 0 0 15px black;
     font-size: 1.5rem; }
+  .prote h3 {
+    font-size: 22px; }
 
 .pmo p {
   font-size: 1.3rem; }
@@ -586,8 +588,8 @@ li a:link {
 
 @media (max-width: 768px) and (orientation: landscape) {
   .cabecera__lista__elemento {
-    line-height: 15px;
-    margin: 5px 100px 0 40px; }
+    line-height: 8px;
+    margin: 0 100px 0 40px; }
     .cabecera__lista__elemento a {
       font-size: 18px; } }
 
@@ -601,6 +603,10 @@ li a:link {
     height: 50px;
     margin-top: 20px;
     margin-right: 25px; }
+  .cabecera__lista__elemento {
+    line-height: 12px; }
+    .cabecera__lista__elemento a {
+      font-size: 18px; }
   .l_autoridades__descrtpcion {
     width: 100%;
     margin-top: 20px;
