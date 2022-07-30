@@ -77,3 +77,13 @@
         display: none;
     }
 }
+
+@media (max-width: 554px ){
+    .cabecera__lista__elemento {
+        line-height: 12px;
+        // margin: 0 100px 0 40px;
+        & a{
+            font-size: 18px;
+        }
+    }   
+}

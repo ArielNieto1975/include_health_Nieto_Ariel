@@ -538,6 +538,8 @@ li a:link {
     .cabecera__lista li ul {
       display: block;
       position: relative; }
+  .submenu {
+    margin-left: 10px; }
   #check:checked ~ nav ul {
     left: 0; }
   .contenedor {
@@ -641,6 +643,12 @@ li a:link {
     padding: 15px 15px; }
   .main__form img {
     display: none; } }
+
+@media (max-width: 554px) {
+  .cabecera__lista__elemento {
+    line-height: 12px; }
+    .cabecera__lista__elemento a {
+      font-size: 18px; } }
 
 @media (max-width: 425px) {
   .contenedor {

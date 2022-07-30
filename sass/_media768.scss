@@ -21,9 +21,11 @@
         & li ul{
             display: block;
             position: relative;
-        }
+        }  
         
-        
+    }
+    .submenu{
+        margin-left: 10px;
     }
     
     #check:checked ~ nav ul{
